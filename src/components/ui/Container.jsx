@@ -1,0 +1,4 @@
+/** Centra el contenido y aplica los márgenes laterales del sitio. */
+export function Container({ className = '', children }) {
+  return <div className={`mx-auto w-full max-w-6xl px-4 sm:px-6 ${className}`}>{children}</div>
+}

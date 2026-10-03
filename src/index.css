@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------
+   Identidad visual del Torneo Femenil 2026 · X-Yatil
+   Estos tokens generan clases de Tailwind: bg-noche-950, text-fucsia-500,
+   font-display, etc. Para cambiar un color del sitio, cámbialo aquí.
+   ------------------------------------------------------------------ */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', ui-sans-serif, system-ui, sans-serif;
+
+  /* Noche: fondos oscuros (barra de navegación, portada, pie) */
+  --color-noche-950: #14061f;
+  --color-noche-900: #1f0b33;
+  --color-noche-800: #2c124a;
+  --color-noche-700: #3d1b63;
+
+  /* Morado: color principal de la marca */
+  --color-morado-50: #f5f0ff;
+  --color-morado-100: #ebe2ff;
+  --color-morado-200: #d6c6fe;
+  --color-morado-500: #7c3aed;
+  --color-morado-600: #6d28d9;
+  --color-morado-700: #5b21b6;
+
+  /* Fucsia: acentos, estado activo, llamadas a la acción */
+  --color-fucsia-300: #ff8cc6;
+  --color-fucsia-400: #ff4fa3;
+  --color-fucsia-500: #ec1c84;
+  --color-fucsia-600: #c80f6c;
+
+  /* Cancha: verde para victorias, en vivo y detalles deportivos */
+  --color-cancha-300: #9ef5b5;
+  --color-cancha-400: #4fe07c;
+  --color-cancha-500: #20c35a;
+
+  /* Fondo general de las páginas */
+  --color-fondo: #f7f4fc;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-fondo font-sans text-noche-900 antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display font-bold tracking-tight uppercase;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-fucsia-500;
+  }
+}
+
+/* Utilidad para el número "2026" con contorno en la portada */
+@utility texto-contorno {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-fucsia-400);
+}
+
+/* Espacio inferior para que la barra de navegación móvil no tape contenido */
+@utility pb-barra-movil {
+  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+}
