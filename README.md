@@ -1,6 +1,6 @@
-# Torneo Femenil 2026 · X-Yatil
+# Torneo Femenil 2026 · X-Hazil Sur
 
-Sitio oficial del torneo comunitario de fútbol femenil de X-Yatil.
+Sitio oficial del torneo comunitario de fútbol femenil de X-Hazil Sur.
 
 **Tecnologías:** React + Vite · Tailwind CSS · React Router · Supabase · Vercel
 

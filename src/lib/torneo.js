@@ -5,7 +5,7 @@
 export const TORNEO = {
   nombre: 'Torneo Femenil',
   anio: 2026,
-  comunidad: 'X-Yatil',
+  comunidad: 'X-Hazil Sur',
   equipos: 6,
 }
 
